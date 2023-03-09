@@ -1,0 +1,85 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    height: 100vh;
+    color: var(--light-color);
+    font-family: var(--font-family-secondary);
+}
+
+
+//Header presentations and animated full name
+.header__info-socials {
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+}
+
+.header__fname {
+    line-height: 2rem;
+    font-size: 4rem;
+    animation: tracking-in-expand 0.5s cubic-bezier(.215,.61,.355,1) both;
+    color: var(--white-color);
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+//Social networks logo and before tag
+.header__socials__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem
+}
+
+.header__socials__text:before {
+    content: "";
+    width: 12rem;
+    height: .2px;
+    background: rgba(13,164,126,.4)
+}
+
+.header__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    gap: 2rem
+}
+
+// picture located into the header with a rounded border.
+.header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-img {
+  display: flex;
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(rgba(13,164,126,.4), transparent);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid rgba(13,164,126,.4);
+  overflow: hidden;
+}

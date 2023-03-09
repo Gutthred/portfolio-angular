@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-bg-color: #02162e;
+    --secondary-bg-color: #2d4969;
+    --third-bg-color: #212229;
+    --primary-color: #0da47e;
+    --accent-primary-color: #067C70;
+    --white-color: #FFFFFF;
+    --light-color: #fffaf0;
+    --a-transition: all .4s ease;
+    --font-family-primary: "Montserrat", sans-serif;
+    --font-family-secondary: "Montserrat Alternates", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family-primary);
+    background-image: linear-gradient(135deg,var(--third-bg-color),var(--primary-bg-color),var(--secondary-bg-color));
+    color: var(--light-color);
+    line-height: 1.5;
+    background-size: auto;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
